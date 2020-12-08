@@ -1,0 +1,90 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.row {
+  background-color: $colorBgMedium;
+
+  td {
+    @include fontSpecialMedium(rgba(255, 255, 255, 0.5));
+
+    padding-top: 2.7rem;
+    padding-bottom: 2.7rem;
+    height: 100%;
+
+    &:first-child {
+      font-weight: 600;
+      color: $colorFontLightest;
+    }
+
+    &:first-child {
+      background-color: $colorBgCellLightest;
+    }
+  }
+
+  .name {
+    @include fontSpecialMedium($colorFontLightest, 600);
+
+    background-color: $colorBgCellLightest;
+  }
+
+  .editable {
+    padding: 0;
+    width: 8rem;
+  }
+}
+
+.rowOdd {
+  background-color: $colorBgMediaLighter;
+}
+
+.rowEditable {
+  transition-duration: $transitionDuration;
+
+  &:hover {
+    background-color: $colorBgRowHover;
+
+    .button {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  .description {
+    position: relative;
+  }
+
+  .button {
+    @include resetButton;
+
+    margin: 0 auto;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: $transitionDuration;
+    cursor: pointer;
+
+    &:hover {
+      .icon {
+        fill: green;
+      }
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  .icon {
+    width: 1.7rem;
+    fill: $colorHighlightLight;
+    transition-duration: $transitionDuration;
+  }
+
+  .formula {
+    @include fontControls($colorFontLightest);
+  }
+}

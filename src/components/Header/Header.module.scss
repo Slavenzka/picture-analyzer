@@ -1,0 +1,13 @@
+@import "styles/mixins";
+@import "styles/variables";
+
+.header {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid $colorBorderDarkest;
+  }
+}

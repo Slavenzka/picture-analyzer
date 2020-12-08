@@ -1,0 +1,10 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.label {
+  @include fontLabel($colorFontLightest);
+
+  display: block;
+  margin-bottom: 0.4rem;
+  opacity: 0.5;
+}

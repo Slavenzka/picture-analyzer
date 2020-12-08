@@ -1,0 +1,19 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  padding: 5.4rem 0 6.2rem 0;
+  background-color: $colorBgLighter;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 3.5rem;
+}
+
+.content {
+  margin-top: 4rem;
+  width: 100%;
+}

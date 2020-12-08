@@ -1,0 +1,54 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  background-color: $colorBgMedium;
+
+  .trigger {
+    @include resetButton;
+
+    display: flex;
+    padding: 2.8rem 4.1rem 2.3rem 4.1rem;
+    width: 100%;
+
+    .label {
+      @include fontMedium($colorHighlightLight, 600);
+    }
+
+    .icon {
+      margin-left: auto;
+      width: 1.7rem;
+      stroke: $colorHighlightLight;
+      transition-duration: $transitionDuration;
+      transform: rotate(0);
+    }
+
+    .iconOpened {
+      transform: rotate(180deg);
+    }
+  }
+
+  .triggerCapitalized {
+    .label {
+      text-transform: uppercase;
+    }
+  }
+
+  .symbol {
+    margin-left: 0.5rem;
+  }
+
+  .collapse {
+    padding: 5rem 0;
+  }
+}
+
+.wrapperDisabled {
+  .trigger {
+    pointer-events: none;
+  }
+
+  .icon {
+    opacity: 0.5;
+  }
+}

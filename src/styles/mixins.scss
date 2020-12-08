@@ -1,0 +1,192 @@
+@import "variables";
+
+// font mixins
+
+@mixin h2($color) {
+  font-family: "Futura", Arial, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  color: $color;
+}
+
+@mixin h3($color: $colorFontLightest, $fontWeight: 400) {
+  font-family: "Futura", Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: $fontWeight  ;
+  line-height: 1;
+  color: $color;
+}
+
+@mixin h4($color: $colorHighlightLight) {
+  font-family: "Futura", Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 2.7rem;
+  color: $color;
+}
+
+@mixin h5($color: $colorFontLightest) {
+  font-family: "Futura", Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+  color: $color;
+}
+
+@mixin fontMedium($color, $fontWeight: 300) {
+  font-family: "Futura", Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: $fontWeight;
+  line-height: 1.6rem;
+  color: $color;
+}
+
+@mixin fontNavigation($color, $fontWeight: 500, $lineHeight: 2.6rem) {
+  font-family: "Futura", Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin fontButtons($color, $fontWeight: 300) {
+  font-family: "Futura", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: $fontWeight;
+  line-height: 1.6rem;
+  color: $color;
+}
+
+@mixin fontSmaller($color, $weight: 300) {
+  font-family: "Futura", Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: $weight;
+  line-height: 1.6rem;
+  color: $color;
+}
+
+@mixin fontCalendarDays($color: $colorFontLightest, $weight: 400) {
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: $weight;
+  line-height: 1.4rem;
+  color: $color;
+}
+
+@mixin fontControls($color) {
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: $color;
+}
+
+@mixin fontCaptionCalendar($color: $colorFontLightest) {
+  font-family: "Futura", Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: $color;
+}
+
+@mixin fontLabel($color, $fontWeight: 300) {
+  font-family: "Futura", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: $fontWeight;
+  line-height: 1.6rem;
+  color: $color;
+}
+
+@mixin fontSmall($color) {
+  font-family: "Futura", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  color: $color;
+}
+
+@mixin fontRegular($color, $lineHeight: 1.6rem) {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin fontTag($color) {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: $color;
+  letter-spacing: 0.026rem;
+}
+
+@mixin fontDate($color) {
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: $color;
+}
+
+@mixin fontCalendarLabel($color) {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: $color;
+}
+
+@mixin fontSpecialMedium($color, $weight: 400) {
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: $weight;
+  line-height: 1.6rem;
+  color: $color;
+}
+
+@mixin fontSpecialSmall($color) {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: $color;
+}
+
+// reset mixins
+
+@mixin resetButton {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+@mixin resetList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin resetFieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+// style mixins
+
+@mixin linkBehavior {
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-highlight-buttons);
+  }
+}

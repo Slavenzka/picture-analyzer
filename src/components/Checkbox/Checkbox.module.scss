@@ -1,0 +1,44 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.input {
+  position:absolute;
+  top:50%;
+  margin:0;
+  padding:0;
+  width:10px;
+  height:10px;
+  border:0;
+  opacity:0;
+
+  & + label {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0;
+    background-color: transparent;
+    border: 1px solid $colorHighlightLight;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition-duration: $transitionDuration;
+
+    .iconCheck {
+      width: 1rem;
+      pointer-events: none;
+      opacity: 0;
+      transition-duration: $transitionDuration;
+    }
+  }
+
+  &:checked + label {
+    background-color: $colorHighlightLight;
+
+    .iconCheck {
+      stroke: $colorFontLightest;
+      opacity: 1;
+    }
+  }
+}

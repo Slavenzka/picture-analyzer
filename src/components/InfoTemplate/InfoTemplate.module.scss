@@ -1,0 +1,65 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  padding-bottom: 5rem;
+}
+
+.top {
+  padding-top: 5.4rem;
+  background-color: $colorBgModal;
+}
+
+.topTransparent {
+  background-color: transparent;
+}
+
+.heading {
+  @include h4($colorFontLightest);
+
+  margin: 0;
+}
+
+.tabTriggers {
+  @include resetList;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 5rem;
+  margin-top: 3.5rem;
+}
+
+.tabTrigger {
+  @include resetButton;
+  @include fontButtons($colorHighlightLight);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition-duration: $transitionDuration;
+
+  &:hover {
+    background-color: $colorBgContent;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.tabTriggerActive {
+  color: $colorFontMedium;
+  background-color: $colorBgContent;
+  pointer-events: none;
+}
+
+.add {
+  padding-top: 4rem;
+  background-color: $colorBgContent;
+}
+
+.buttonAdd {
+  height: 5rem;
+}

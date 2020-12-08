@@ -1,0 +1,52 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.input {
+  @include fontControls($colorFontLightest);
+
+  padding: 1.6rem 2.1rem;
+  width: 100%;
+  height: 5rem;
+  background-color: transparent;
+  border: 1px solid $colorBorderInputPassive;
+  border-radius: $borderRadius;
+  transition-duration: $transitionDuration;
+
+  &::placeholder {
+    font-weight: 400;
+    opacity: 0.3;
+  }
+
+  &:hover:not(.inputError),
+  &:focus:not(.inputError) {
+    border-color: $colorBorderInputActive;
+  }
+
+  &:focus {
+    background-color: $colorBgInputActive;
+  }
+
+  &:disabled {
+    color: $colorFontInputDisabled;
+    background-color: $colorBgInputDisabled;
+    border-color: $colorBgInputDisabled;
+    pointer-events: none;
+  }
+
+  &Error {
+    border-color: red;
+  }
+}
+
+.inputResult {
+  @include h4($colorFontLightest);
+
+  background-color: $colorHighlightDarkTransparent;
+  border: none;
+}
+
+.inputTextarea {
+  width: 100%;
+  height: 14rem;
+  resize: none;
+}

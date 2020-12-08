@@ -1,0 +1,14 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.heading {
+  @include h2($colorFontDarkest);
+
+  margin: 0;
+}
+
+.subheading {
+  @include h3;
+
+  margin: 0;
+}

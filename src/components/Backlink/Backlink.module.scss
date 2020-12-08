@@ -1,0 +1,15 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.link {
+  @include fontSmaller($colorFontBacklink);
+
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 1rem;
+  width: 1.8rem;
+  fill: $colorHighlightLight;
+}

@@ -1,0 +1,89 @@
+@import "mixins";
+@import "fonts";
+@import "variables";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $colorFontLightest;
+  background-color: $colorBgDarkest;
+  overflow-y: scroll;
+
+  .simplebar-placeholder {
+    display: none;
+  }
+
+  .simplebar-scrollbar:before {
+    position: absolute;
+    content: '';
+    background: $colorThumb;
+    border-radius: 0.7rem;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity .2s linear
+  }
+
+  .simplebar-scrollbar.simplebar-visible:before {
+    opacity: 1;
+    transition: opacity 0s linear
+  }
+
+  .simplebar-track.simplebar-vertical {
+    top: 0;
+    right: -1rem;
+    width: 0.5rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  font-size: 0;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+.secondColumn {
+  grid-column: 2 / 3;
+}
+
+.formControls {
+  margin-top: 3.1rem;
+}
+
+.contentWrapper {
+  padding-right: var(--padding-h-content);
+  padding-left: var(--padding-h-content);
+}
+
+.general {
+  color: $colorHighlightBrackets;
+}
+
+.operators {
+  color: $colorHighlightDark;
+}

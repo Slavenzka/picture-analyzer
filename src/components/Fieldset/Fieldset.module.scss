@@ -1,0 +1,26 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.fieldset {
+  @include resetFieldset;
+
+  width: 100%;
+
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+}
+
+.fieldsetDouble {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  align-items: center;
+}
+
+.fieldsetTriple {
+  display: grid;
+  grid-template-columns: 31.8rem 36rem 1fr;
+  grid-column-gap: 2rem;
+  align-items: center;
+}

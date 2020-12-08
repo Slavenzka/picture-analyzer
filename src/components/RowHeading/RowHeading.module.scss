@@ -1,0 +1,16 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.list {
+  @include resetList;
+
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  @include fontRegular($colorFontLightest, 1.4rem);
+
+  padding: 1.1rem 2.5rem 1.2rem 2.5rem;
+  letter-spacing: 0.028rem;
+}

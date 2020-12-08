@@ -1,0 +1,33 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  padding: 5rem 2.5rem;
+  width: 53.6rem;
+  background-color: $colorBgModal;
+}
+
+.title {
+  @include h4($colorFontLightest);
+
+  margin: 0;
+}
+
+.content {
+  padding-top: 3rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.button {
+  width: 100%;
+
+  &:not(:first-child) {
+    margin-left: 4rem;
+  }
+}

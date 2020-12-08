@@ -1,0 +1,61 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  padding: 5.1rem 2.5rem 5.1rem 2.5rem;
+  width: 53.6rem;
+  background-color: $colorBgModal;
+}
+
+.title {
+  @include h4($colorFontLightest);
+
+  margin: 0;
+}
+
+.fieldset,
+.fieldsetValue {
+  @include resetFieldset;
+
+  .error {
+    margin-top: 2rem;
+  }
+}
+
+.fieldset {
+  &:first-child {
+    margin-top: 4rem;
+  }
+
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+}
+
+.fieldsetInner {
+  @include resetFieldset;
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1.7rem;
+  margin-top: 2rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.button {
+  width: 23.4rem;
+}

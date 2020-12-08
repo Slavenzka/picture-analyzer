@@ -1,0 +1,29 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.searchWrapper {
+  position: relative;
+}
+
+.iconSearch {
+  position: absolute;
+  top: calc(50% - 1.8rem / 2);
+  left: 2.7rem;
+  width: 1.8rem;
+  fill: $colorFontLightest;
+  opacity: 0.2;
+}
+
+.search {
+  @include fontCalendarDays($colorFontLightest);
+
+  padding: 2rem 6.1rem;
+  width: 100%;
+  height: 7rem;
+  border: none;
+  background-color: $colorBgModal;
+
+  &::placeholder {
+    opacity: 0.2;
+  }
+}

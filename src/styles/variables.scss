@@ -1,0 +1,50 @@
+// colors
+
+$colorBgDarkest: rgb(0, 0, 0);
+$colorBgMedium: rgb(22, 22, 22);
+$colorBgMediaLighter: rgb(24, 24, 24);
+$colorBgContent: rgb(18, 18, 18);
+$colorBgLighter: rgba(253, 253, 253, 0.11);
+$colorBgInputActive: rgba(35, 34, 34, 0.5);
+$colorBgTicker: rgb(67, 10, 121);
+$colorBgModal: rgb(28, 28, 28);
+$colorBgLabel: rgb(52, 52, 52);
+$colorBgCellLightest: rgba(216, 216, 216, 0.03);
+$colorBgRowHover: rgb(33, 33, 33);
+$colorBgRemove: rgb(139, 139, 139);
+$colorBgInputDisabled: rgb(38, 38, 38);
+
+$colorFontDarkest: rgba(255, 255, 255, 0.29);
+$colorFontInputDisabled: rgba(255, 255, 255, 0.7);
+$colorFontMedium: rgba(255, 255, 255, 0.5);
+$colorFontLightest: rgb(255, 255, 255);
+$colorHighlightLight: rgb(29, 202, 105);
+$colorHighlightDark: rgb(114, 0, 222);
+$colorHighlightDarkTransparent: rgba(114, 0, 222, 0.5);
+$colorHighlightSelect: rgb(135, 48, 229);
+$colorHighlightBrackets: rgb(255, 137, 55);
+$colorHighlightError: rgb(255,171,96);
+$colorFontBacklink: rgb(88, 88, 88);
+
+$colorBorderDarkest: rgba(255, 255, 255, 0.17);
+$colorBorderInputPassive: rgba(233, 233, 233, 0.1);
+$colorBorderInputActive: rgb(65, 96, 79);
+$colorBorderFormulas: rgb(45, 45, 45);
+
+$colorButtonDark: rgba(255, 255, 255, 0.05);
+$colorThumb: rgb(141, 141, 141);
+$colorThumbOptional: rgb(157, 252, 199);
+
+// width and size variables
+:global {
+  #root {
+    --padding-h-outer: 5.3rem;
+    --padding-h-inner: 15.5rem;
+    --padding-h-content: 3.5rem;
+  }
+}
+
+// others
+$transitionDuration: 0.3s;
+$boxShadow: 0 0.2rem 2rem 0 rgba(44, 44, 44, 0.1);
+$borderRadius: 0.2rem;

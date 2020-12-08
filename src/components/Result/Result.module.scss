@@ -1,0 +1,25 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto 17rem;
+  grid-column-gap: 1.9rem;
+  padding-bottom: 2.8rem;
+}
+
+.label {
+  @include h4($colorFontDarkest);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0;
+  text-align: right;
+}
+
+.date {
+  @include fontDate($colorFontDarkest);
+
+  text-align: right;
+}

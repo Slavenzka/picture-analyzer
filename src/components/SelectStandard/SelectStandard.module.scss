@@ -1,0 +1,92 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.label {
+  @include fontSpecialMedium($colorFontLightest);
+
+  margin: 0 0 0.4rem 0;
+  opacity: 0.5;
+}
+
+.select {
+  :global {
+    .simplebar-placeholder {
+      display: block;
+    }
+
+    .select {
+      &__control {
+        height: 5rem;
+        min-height: 5rem;
+        border-width: 0.1rem;
+        cursor: pointer;
+
+        &:hover {
+          border-color: $colorBorderInputActive;
+        }
+      }
+
+      &__value-container {
+        padding: 0 2.1rem;
+        height: 100%;
+      }
+
+      &__placeholder {
+        @include fontSpecialMedium($colorFontLightest);
+
+        opacity: 0.5;
+      }
+
+      &__single-value {
+        @include fontSpecialMedium($colorFontLightest, 600);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        &--is-disabled {
+          color: $colorFontMedium;
+        }
+      }
+
+      &__indicator-separator {
+        display: none;
+      }
+
+      &__dropdown-indicator {
+        padding: 0.8rem 2rem 0.8rem 2rem;
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+          fill: $colorHighlightLight;
+        }
+      }
+
+      &__option {
+        @include fontSpecialMedium($colorFontLightest, 600);
+
+        &:not(:first-child) {
+          border-top: 0.1rem solid $colorBorderInputActive;
+        }
+
+        &:hover,
+        &--is-focused {
+          color: $colorFontLightest;
+          background-color: $colorHighlightSelect;
+        }
+
+        &--is-selected {
+          color: $colorFontDarkest;
+          background-color: transparent;
+          pointer-events: none;
+        }
+
+        &:not(.select__option--is-selected) {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

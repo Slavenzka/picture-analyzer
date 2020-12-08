@@ -1,0 +1,25 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  @include fontSpecialMedium($colorFontMedium, 600);
+
+  position: relative;
+}
+
+.power,
+.lower {
+  @include fontSpecialSmall($colorFontMedium);
+
+  position: absolute;
+}
+
+.power {
+  bottom: 40%;
+  right: -0.6rem;
+}
+
+.lower {
+  top: 20%;
+  right: -0.6rem;
+}

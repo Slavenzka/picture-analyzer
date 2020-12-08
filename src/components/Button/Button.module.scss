@@ -1,0 +1,81 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.button {
+  @include resetButton;
+  @include fontButtons($colorFontLightest);
+
+  position: relative;
+  padding: 1.3rem 3.4rem 1.6rem 3.4rem;
+  min-width: 17rem;
+  border-radius: 2.5rem;
+  transition-duration: $transitionDuration;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.buttonLight {
+  background-color: $colorHighlightLight;
+
+  &:hover {
+    background-color: darken($colorHighlightLight, 20%);
+  }
+}
+
+.buttonDark {
+  color: $colorHighlightLight;
+  background-color: $colorButtonDark;
+}
+
+.buttonBordered {
+  color: $colorHighlightLight;
+  background-color: transparent;
+  border: 1px solid $colorHighlightLight;
+
+  &:hover {
+    border-color: darken($colorHighlightLight, 20%);
+  }
+
+  .spinner {
+    fill: $colorHighlightLight;
+  }
+}
+
+.buttonLarge {
+  padding: 1.9rem 3rem 2rem 3rem;
+  border-radius: 2.75rem;
+}
+
+.buttonAdd {
+  @include resetButton;
+  @include fontSmaller($colorHighlightLight);
+
+  padding: 0 20%;
+  width: 100%;
+  text-align: center;
+  border: 1px dashed $colorFontDarkest;
+  border-radius: 0.2rem;
+  transition-duration: $transitionDuration;
+
+  &:hover {
+    color: $colorFontLightest;
+    background-color: $colorHighlightLight;
+    border: 1px solid $colorHighlightLight;
+  }
+}
+
+.buttonDisabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.spinner {
+  position: absolute;
+  top: calc(50% - 2rem / 2);
+  left: 4rem;
+  width: 2rem;
+  fill: $colorFontLightest;
+  transform-origin: center;
+}

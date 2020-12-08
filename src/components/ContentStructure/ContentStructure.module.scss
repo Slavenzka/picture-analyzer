@@ -1,0 +1,30 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  .container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding-top: 2.7rem;
+  }
+
+  .heading {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .backlink {
+    grid-column: 2 / -1;
+    margin-left: auto;
+  }
+
+  .log {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .content {
+    grid-column: 1 / -1;
+    margin-top: 3rem;
+  }
+}

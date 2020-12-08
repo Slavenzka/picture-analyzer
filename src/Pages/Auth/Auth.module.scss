@@ -1,0 +1,35 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.container {
+  background-color: $colorBgContent;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 35vh 30% 25% 30%;
+  height: 100vh;
+
+  .heading {
+    margin-bottom: 4rem;
+    color: $colorHighlightLight;
+  }
+
+  .input {
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+
+  .button {
+    display: block;
+    margin: 3rem auto 0 auto;
+    width: 70%;
+  }
+
+  .error {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}

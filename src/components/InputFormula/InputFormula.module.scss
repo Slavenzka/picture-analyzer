@@ -1,0 +1,63 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  position: relative;
+}
+
+.button {
+  @include resetButton;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1.7rem;
+  height: 5rem;
+}
+
+.icon {
+  width: 1.9rem;
+  stroke: $colorHighlightLight;
+  transition-duration: $transitionDuration;
+  transform: rotate(0);
+}
+
+.buttonOpened {
+  .icon {
+    transform: rotate(180deg);
+  }
+}
+
+.input {
+  padding-right: 5rem;
+}
+
+.list {
+  @include resetList;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+  background-color: $colorBgMedium;
+  border-right: 1px solid $colorBorderFormulas;
+  border-bottom: 1px solid $colorBorderFormulas;
+  border-left: 1px solid $colorBorderFormulas;
+  z-index: 1;
+}
+
+.item {
+  @include fontControls($colorFontLightest);
+
+  padding: 1.7rem 2.1rem;
+  transition-duration: $transitionDuration;
+
+  &:not(:first-child) {
+    border-top: 1px solid $colorBorderFormulas;
+  }
+
+  &:hover {
+    background-color: $colorHighlightSelect;
+  }
+}

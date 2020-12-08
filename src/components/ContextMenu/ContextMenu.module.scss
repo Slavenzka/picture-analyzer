@@ -1,0 +1,43 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.list {
+  @include resetList;
+
+  position: absolute;
+  display: none;
+  z-index: 2;
+
+  :global {
+    .simplebar-scrollbar:before {
+      background: $colorThumbOptional;
+      border-radius: 0.4rem;
+    }
+
+    .simplebar-track.simplebar-vertical {
+      width: 0.4rem;
+    }
+
+  }
+}
+
+.listOpened {
+  display: block;
+}
+
+.button {
+  @include resetButton;
+  @include fontCalendarLabel($colorFontLightest);
+
+  display: block;
+  padding: 0 2.1rem;
+  width: 100%;
+  height: 5rem;
+  text-align: left;
+  background-color: $colorHighlightLight;
+  transition-duration: $transitionDuration;
+
+  &:hover {
+    background-color: $colorHighlightSelect;
+  }
+}
