@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/picture-analyzer/static/css/main.c368edbd.chunk.css",
+    "main.js": "/picture-analyzer/static/js/main.c287fe71.chunk.js",
+    "main.js.map": "/picture-analyzer/static/js/main.c287fe71.chunk.js.map",
+    "runtime-main.js": "/picture-analyzer/static/js/runtime-main.a9080f8b.js",
+    "runtime-main.js.map": "/picture-analyzer/static/js/runtime-main.a9080f8b.js.map",
+    "static/css/2.2cba102f.chunk.css": "/picture-analyzer/static/css/2.2cba102f.chunk.css",
+    "static/js/2.aed9b21a.chunk.js": "/picture-analyzer/static/js/2.aed9b21a.chunk.js",
+    "static/js/2.aed9b21a.chunk.js.map": "/picture-analyzer/static/js/2.aed9b21a.chunk.js.map",
+    "index.html": "/picture-analyzer/index.html",
+    "precache-manifest.0aa2012c6196e1eb0b43951107577cc5.js": "/picture-analyzer/precache-manifest.0aa2012c6196e1eb0b43951107577cc5.js",
+    "service-worker.js": "/picture-analyzer/service-worker.js",
+    "static/css/2.2cba102f.chunk.css.map": "/picture-analyzer/static/css/2.2cba102f.chunk.css.map",
+    "static/css/main.c368edbd.chunk.css.map": "/picture-analyzer/static/css/main.c368edbd.chunk.css.map",
+    "static/js/2.aed9b21a.chunk.js.LICENSE.txt": "/picture-analyzer/static/js/2.aed9b21a.chunk.js.LICENSE.txt",
+    "static/media/common.scss": "/picture-analyzer/static/media/FuturaPTLight.488414da.woff2",
+    "static/media/Datepicker.module.scss": "/picture-analyzer/static/media/icon-arrow-calendar.09d6db7d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9080f8b.js",
+    "static/css/2.2cba102f.chunk.css",
+    "static/js/2.aed9b21a.chunk.js",
+    "static/css/main.c368edbd.chunk.css",
+    "static/js/main.c287fe71.chunk.js"
+  ]
+}
