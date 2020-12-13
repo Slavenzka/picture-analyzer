@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a87d2562422c50c49089ceb9779617d5",
+    "revision": "50daa65815c67b7016a2f4da521cf001",
     "url": "/picture-analyzer/index.html"
   },
   {
-    "revision": "b776e8258a026064c2c4",
-    "url": "/picture-analyzer/static/css/2.2cba102f.chunk.css"
+    "revision": "713c123ef03a417a3c88",
+    "url": "/picture-analyzer/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "723f0eca89a9fc3f3b6e",
-    "url": "/picture-analyzer/static/css/main.c368edbd.chunk.css"
+    "revision": "4c57bd3f376be23a2f18",
+    "url": "/picture-analyzer/static/css/main.f6319664.chunk.css"
   },
   {
-    "revision": "b776e8258a026064c2c4",
-    "url": "/picture-analyzer/static/js/2.aed9b21a.chunk.js"
+    "revision": "713c123ef03a417a3c88",
+    "url": "/picture-analyzer/static/js/2.f35920d0.chunk.js"
   },
   {
-    "revision": "618cb864cf8e37a20f4661316a5ab0e5",
-    "url": "/picture-analyzer/static/js/2.aed9b21a.chunk.js.LICENSE.txt"
+    "revision": "760eb3a786f9a97cdf334cf30fcfe850",
+    "url": "/picture-analyzer/static/js/2.f35920d0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "723f0eca89a9fc3f3b6e",
-    "url": "/picture-analyzer/static/js/main.c287fe71.chunk.js"
+    "revision": "4c57bd3f376be23a2f18",
+    "url": "/picture-analyzer/static/js/main.38bf70a6.chunk.js"
   },
   {
     "revision": "2430c9aee0e7eb276b3c",
@@ -58,9 +58,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "488414dacc28d8fd30a89b2755dce961",
     "url": "/picture-analyzer/static/media/FuturaPTLight.488414da.woff2"
-  },
-  {
-    "revision": "09d6db7d3a908ea9df2f0365fcc3de74",
-    "url": "/picture-analyzer/static/media/icon-arrow-calendar.09d6db7d.svg"
   }
 ]);
