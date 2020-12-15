@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/picture-analyzer/static/css/main.6ec6c6b1.chunk.css",
-    "main.js": "/picture-analyzer/static/js/main.d5186b8f.chunk.js",
-    "main.js.map": "/picture-analyzer/static/js/main.d5186b8f.chunk.js.map",
+    "main.css": "/picture-analyzer/static/css/main.2bec93a4.chunk.css",
+    "main.js": "/picture-analyzer/static/js/main.bc69e0e0.chunk.js",
+    "main.js.map": "/picture-analyzer/static/js/main.bc69e0e0.chunk.js.map",
     "runtime-main.js": "/picture-analyzer/static/js/runtime-main.a9080f8b.js",
     "runtime-main.js.map": "/picture-analyzer/static/js/runtime-main.a9080f8b.js.map",
     "static/css/2.764ccc25.chunk.css": "/picture-analyzer/static/css/2.764ccc25.chunk.css",
-    "static/js/2.b9d7530e.chunk.js": "/picture-analyzer/static/js/2.b9d7530e.chunk.js",
-    "static/js/2.b9d7530e.chunk.js.map": "/picture-analyzer/static/js/2.b9d7530e.chunk.js.map",
+    "static/js/2.8ba8631f.chunk.js": "/picture-analyzer/static/js/2.8ba8631f.chunk.js",
+    "static/js/2.8ba8631f.chunk.js.map": "/picture-analyzer/static/js/2.8ba8631f.chunk.js.map",
     "index.html": "/picture-analyzer/index.html",
-    "precache-manifest.eca2b2d0254beafefa962d1801c1decd.js": "/picture-analyzer/precache-manifest.eca2b2d0254beafefa962d1801c1decd.js",
+    "precache-manifest.e2756d5617e6fc3fb9022b23f2338b7f.js": "/picture-analyzer/precache-manifest.e2756d5617e6fc3fb9022b23f2338b7f.js",
     "service-worker.js": "/picture-analyzer/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/picture-analyzer/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.6ec6c6b1.chunk.css.map": "/picture-analyzer/static/css/main.6ec6c6b1.chunk.css.map",
-    "static/js/2.b9d7530e.chunk.js.LICENSE.txt": "/picture-analyzer/static/js/2.b9d7530e.chunk.js.LICENSE.txt",
+    "static/css/main.2bec93a4.chunk.css.map": "/picture-analyzer/static/css/main.2bec93a4.chunk.css.map",
+    "static/js/2.8ba8631f.chunk.js.LICENSE.txt": "/picture-analyzer/static/js/2.8ba8631f.chunk.js.LICENSE.txt",
     "static/media/common.scss": "/picture-analyzer/static/media/FuturaPTLight.488414da.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.a9080f8b.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.b9d7530e.chunk.js",
-    "static/css/main.6ec6c6b1.chunk.css",
-    "static/js/main.d5186b8f.chunk.js"
+    "static/js/2.8ba8631f.chunk.js",
+    "static/css/main.2bec93a4.chunk.css",
+    "static/js/main.bc69e0e0.chunk.js"
   ]
 }
